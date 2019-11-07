@@ -170,10 +170,10 @@ export class NgxWidgetResizerDirective {
       // reset style
       this.renderer.removeClass(this.widgetCmp.getEl().nativeElement, 'wg-resizing');
       this.renderer.removeClass(this.el.nativeElement, 'dragging');
-      this.renderer.setStyle(this.parentContainer, 'top', '');
-      this.renderer.setStyle(this.parentContainer, 'left', '');
-      this.renderer.setStyle(this.parentContainer, 'bottom', '');
-      this.renderer.setStyle(this.parentContainer, 'right', '');
+      // this.renderer.setStyle(this.parentContainer, 'top', '');
+      // this.renderer.setStyle(this.parentContainer, 'left', '');
+      // this.renderer.setStyle(this.parentContainer, 'bottom', '');
+      // this.renderer.setStyle(this.parentContainer, 'right', '');
     }
     if (typeof PointerEvent !== 'undefined') {
       window.removeEventListener('pointermove', this._onMoveListener);
